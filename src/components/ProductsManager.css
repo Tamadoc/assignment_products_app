@@ -1,0 +1,24 @@
+#products-manager {
+  max-width: 1200px;
+  margin: 2rem auto;
+  border: 2px inset grey;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.flex-item {
+  width: 50%;
+  min-width: 50%;
+  padding: 1rem;
+}
+@media screen and (max-width: 1005px) {
+  .flex-item {
+    margin-top: 0.2rem;
+    width: 100%;
+  }
+
+}

@@ -1,0 +1,22 @@
+tr button {
+  padding: 0.2rem 0.5rem;
+  border-radius: 5px;
+  font-size: 0.95rem;
+}
+
+tbody tr {
+  border-top: 1px solid lightgrey;
+}
+
+tbody tr:hover {
+  background-color: lightgray;
+}
+
+tbody td {
+  padding: 0.5rem 0.2rem;
+}
+
+td.right {
+  text-align: right;
+  padding-right: 1rem;
+}

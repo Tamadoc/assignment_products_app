@@ -1,0 +1,49 @@
+#new-product {
+  padding: 0.5rem;
+}
+
+.card {
+  background-color: lightblue;
+  padding: 0 0.5rem 0.5rem;
+  height: 100%;
+  border: 2px outset cadetblue;
+}
+
+form > div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0.5rem;
+}
+
+label {
+  width: 120px;
+  font-weight: bold;
+}
+
+input,
+select,
+textarea {
+  padding: 0.2rem ;
+  font-size: 1rem;
+  margin-right: 1rem;
+  width: 70%;
+}
+
+form button {
+  float: right;
+}
+
+@media screen and (max-width: 985px) {
+  input,
+  select,
+  textarea {
+    margin-top: 0.2rem;
+    width: 100%;
+  }
+}
+
+.textarea {
+  resize: vertical;
+}
