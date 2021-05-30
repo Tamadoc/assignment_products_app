@@ -1,7 +1,11 @@
 import "./ProductsTable.css";
 import ProductsTableRow from "./ProductsTableRow";
 
-function ProductsTable() {
+function ProductsTable(props) {
+  const showDetailsHandler = (product) => {
+    props.onShowDetails(product);
+  };
+
   return (
     <div className="flex-item">
       <h2>Products List (table)</h2>
@@ -15,9 +19,16 @@ function ProductsTable() {
         </thead>
 
         <tbody>
-          <ProductsTableRow />
-          <ProductsTableRow />
-          <ProductsTableRow />
+        {props.items.map((product) => (
+          <ProductsTableRow
+            key={product.id}
+            id={product.id}
+            name={product.name}
+            category={product.category}
+            price={product.price}
+            description={product.description}
+            onShowDetails={showDetailsHandler}
+          />))}
         </tbody>
       </table>
     </div>

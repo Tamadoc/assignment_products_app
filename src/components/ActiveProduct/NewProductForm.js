@@ -1,6 +1,10 @@
 import "./NewProductForm.css";
 
 function NewProductForm() {
+
+  /* hardcoded data */
+  const categoryList = ['Sports', 'Casual', 'Formal'];
+
   return (
     <div id="new-product" className="flex-item">
       <div className="card">
@@ -13,9 +17,9 @@ function NewProductForm() {
           <div>
             <label htmlFor="category">Category</label>
             <select id="category" name="category" required>
-              <option value="category-1">Category1</option>
-              <option value="category-2">Category2</option>
-              <option value="category-3">Category2</option>
+              <option value={categoryList[0]}>{categoryList[0]}</option>
+              <option value={categoryList[1]}>{categoryList[1]}</option>
+              <option value={categoryList[2]}>{categoryList[2]}</option>
             </select>
           </div>
           <div>

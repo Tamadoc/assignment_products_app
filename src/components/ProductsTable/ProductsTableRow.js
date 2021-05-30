@@ -1,12 +1,16 @@
 import "./ProductsTableRow.css";
 
-function ProductsTableRow() {
+function ProductsTableRow(props) {
+  const showDetailsHandler = (event) => {
+    props.onShowDetails(event.target.value);
+  };
+
   return (
     <tr>
-      <td>Product name, long enough to wrap to the next line</td>
-      <td>Category1</td>
-      <td className="right">50,90kr</td>
-      <td><button className="test">Details</button></td>
+      <td>{props.name}</td>
+      <td>{props.category}</td>
+      <td className="right">{props.price.toFixed(2)}kr</td>
+      <td><button value={props.id} onClick={showDetailsHandler}>Details</button></td>
       {/*<td><button className="test">Edit</button></td> ////need to stack 2 buttons on narrow widths//// */}
     </tr>
   );

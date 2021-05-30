@@ -35,6 +35,10 @@ form button {
   float: right;
 }
 
+textarea {
+  resize: vertical;
+}
+
 @media screen and (max-width: 985px) {
   input,
   select,
@@ -42,8 +46,4 @@ form button {
     margin-top: 0.2rem;
     width: 100%;
   }
-}
-
-.textarea {
-  resize: vertical;
 }
