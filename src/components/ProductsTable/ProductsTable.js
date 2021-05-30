@@ -2,8 +2,8 @@ import "./ProductsTable.css";
 import ProductsTableRow from "./ProductsTableRow";
 
 function ProductsTable(props) {
-  const showDetailsHandler = (product) => {
-    props.onShowDetails(product);
+  const showDetailsHandler = (productId) => {
+    props.onShowDetails(productId);
   };
 
   return (

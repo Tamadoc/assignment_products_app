@@ -2,7 +2,8 @@ import "./ProductsTableRow.css";
 
 function ProductsTableRow(props) {
   const showDetailsHandler = (event) => {
-    props.onShowDetails(event.target.value);
+    const productId = parseInt(event.target.value);
+    props.onShowDetails(productId);
   };
 
   return (
